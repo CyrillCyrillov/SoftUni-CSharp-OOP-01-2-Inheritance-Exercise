@@ -15,6 +15,12 @@ namespace Animals
 
                 string[] data = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries).ToArray();
 
+                if(data.Length < 3 || int.Parse(data[1]) <= 0)
+                {
+                    Console.WriteLine("Invalid input!");
+                    continue;
+                }
+                
                 // name = data[0]
                 // age = data[1]
                 // gender = data[2]
