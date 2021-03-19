@@ -11,7 +11,9 @@ namespace NeedForSpeed
         public SportCar(int horsePower, double fuel)
             : base(horsePower, fuel)
         {
+
         }
+
         public override double FuelConsumption
             => DefaultSportCarFuelConsumption;
     }
